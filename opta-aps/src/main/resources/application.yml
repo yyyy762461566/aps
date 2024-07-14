@@ -1,0 +1,19 @@
+server:
+    port: 8080
+spring:
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        url: jdbc:postgresql://localhost:5432/aps
+        username: postgres
+        password: admins
+    thymeleaf:
+        cache: true
+        check-template: true
+        check-template-location: true
+        content-type: text/html
+        enabled: true
+        encoding: UTF-8
+        excluded-view-names: ''
+        mode: HTML5
+        prefix: classpath:/templates/
+        suffix: .html
