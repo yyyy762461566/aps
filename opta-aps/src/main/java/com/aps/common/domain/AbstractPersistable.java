@@ -2,17 +2,23 @@ package com.aps.common.domain;
 
 import org.optaplanner.core.api.domain.lookup.PlanningId;
 
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
+import java.io.Serializable;
+
 /**
  * @author Administrator
  */
-public abstract class AbstractPersistable {
+@MappedSuperclass
+public abstract class AbstractPersistable implements Serializable {
 
-    protected Long id;
+    @Id
+    private Long id;
 
-    protected AbstractPersistable() {
+    public AbstractPersistable() {
     }
 
-    protected AbstractPersistable(long id) {
+    public AbstractPersistable(long id) {
         this.id = id;
     }
 
@@ -21,7 +27,7 @@ public abstract class AbstractPersistable {
         return id;
     }
 
-    protected void setId(long id) {
+    public void setId(long id) {
         this.id = id;
     }
 

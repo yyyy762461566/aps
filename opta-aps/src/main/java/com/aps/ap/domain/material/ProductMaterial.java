@@ -2,25 +2,25 @@ package com.aps.ap.domain.material;
 
 import com.aps.common.domain.AbstractPersistable;
 import com.aps.common.domain.MaterialTypeEnum;
+import com.aps.common.domain.TimeWrapper;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-import java.io.Serializable;
-import java.math.BigDecimal;
+import javax.persistence.Entity;
 import java.util.Date;
 
 /**
  * 产品系列表
- * @TableName SCHED_AP_MO_ML
  */
+@Entity(name = "AP_PRODUCT_MATERIAL")
 @EqualsAndHashCode(callSuper = true)
 @Data
-public class ProductMaterial extends AbstractPersistable implements Serializable {
+public class ProductMaterial extends AbstractPersistable {
 
     /**
      * 部门id
      */
-    private String sectionId;
+    private String deptId;
 
     /**
      * 物料主键
@@ -35,37 +35,37 @@ public class ProductMaterial extends AbstractPersistable implements Serializable
     /**
      * 准备时间
      */
-    private BigDecimal rt;
+    private TimeWrapper readyTime;
 
     /**
      * 单件加工时间
      */
-    private BigDecimal ut;
+    private TimeWrapper uniqueTime;
 
     /**
      * 分批批量(分批生产、交货数量）
      */
-    private BigDecimal bq;
+    private Double bq;
 
     /**
      * 首批时间
      */
-    private BigDecimal ft;
+    private TimeWrapper ft;
 
     /**
-     * 节拍（单位天）
+     * 节拍
      */
-    private BigDecimal tt;
+    private TimeWrapper tt;
 
     /**
      * 后处置时间
      */
-    private BigDecimal at;
+    private TimeWrapper at;
 
     /**
      * 缓冲时间（单位天）
      */
-    private BigDecimal bt;
+    private TimeWrapper bt;
 
     /**
      * 周期计算公式
@@ -99,5 +99,4 @@ public class ProductMaterial extends AbstractPersistable implements Serializable
 
     private Date modifyTime;
 
-    private static final long serialVersionUID = 1L;
 }

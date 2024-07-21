@@ -6,6 +6,12 @@ spring:
         url: jdbc:postgresql://localhost:5432/aps
         username: postgres
         password: admins
+    jpa:
+        hibernate:
+            #通过 jpa 自动生成数据库中的表
+            ddl-auto: update
+        show-sql: true
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
     thymeleaf:
         cache: true
         check-template: true

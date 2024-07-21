@@ -1,7 +1,12 @@
 package com.aps.ap.domain.material;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.support.JpaEntityInformation;
 import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
 import org.springframework.data.repository.CrudRepository;
+
+import javax.persistence.EntityManager;
+import java.util.Optional;
 
 /**
  * @className: ProductMaterialRepository
@@ -9,8 +14,6 @@ import org.springframework.data.repository.CrudRepository;
  * @author: YY
  * @date: 2024/6/30
  **/
-public class ProductMaterialRepository extends SimpleJpaRepository<ProductMaterial, Long> {
-
-
+public interface ProductMaterialRepository extends CrudRepository<ProductMaterial, Long> {
 
 }
