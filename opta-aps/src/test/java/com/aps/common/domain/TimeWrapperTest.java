@@ -1,8 +1,11 @@
 package com.aps.common.domain;
 
+import com.aps.decision.SaleInfo;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.DoubleStream;
 
 /**
  * TimeWrapperTest
