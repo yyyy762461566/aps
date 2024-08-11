@@ -35,12 +35,12 @@ public class ProductMaterial extends AbstractPersistable {
     /**
      * 准备时间
      */
-    private TimeWrapper readyTime;
+    private String readyTime;
 
     /**
      * 单件加工时间
      */
-    private TimeWrapper uniqueTime;
+    private String uniqueTime;
 
     /**
      * 分批批量(分批生产、交货数量）
@@ -50,22 +50,22 @@ public class ProductMaterial extends AbstractPersistable {
     /**
      * 首批时间
      */
-    private TimeWrapper ft;
+    private String ft;
 
     /**
      * 节拍
      */
-    private TimeWrapper tt;
+    private String tt;
 
     /**
      * 后处置时间
      */
-    private TimeWrapper at;
+    private String at;
 
     /**
      * 缓冲时间（单位天）
      */
-    private TimeWrapper bt;
+    private String bt;
 
     /**
      * 周期计算公式

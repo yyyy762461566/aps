@@ -15,10 +15,6 @@ import java.util.function.Function;
  */
 public interface IExcelObjectWrapper {
 
-    /**
-     * 获取列映射
-     * @return
-     */
-    Map<Integer, Function> getColumnMapping();
+
 
 }
