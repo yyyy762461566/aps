@@ -1,0 +1,108 @@
+[
+	{
+		"id": 1,
+		"title": "工作空间",
+		"icon": "layui-icon layui-icon-console",
+		"type": 0,
+		"children": [
+			{
+				"id": "10",
+				"title": "分析页",
+				"icon": "layui-icon layui-icon-console",
+				"type": 1,
+				"openType": "_component",
+				"href": "view/analysis/index"
+			},
+			{
+				"id": "11",
+				"title": "工作台",
+				"icon": "layui-icon layui-icon-console",
+				"type": 1,
+				"openType": "_component",
+				"href": "view/console/index"
+			}
+		]
+	},
+	{
+		"id": 1000,
+		"title": "基础数据",
+		"icon": "layui-icon layui-icon-component",
+		"type": 0,
+		"children": [
+			{
+				"id": "10001",
+				"title": "物料主数据",
+				"icon": "layui-icon layui-icon-console",
+				"type": 1,
+				"openType": "_component",
+				"href": "view/base/material"
+			},
+			{
+				"id": "10003",
+				"title": "crud模板",
+				"icon": "layui-icon layui-icon-console",
+				"type": 1,
+				"openType": "_component",
+				"href": "view/crud/crud"
+			}
+		]
+	},
+	{
+		"id": "result",
+		"title": "结果页面",
+		"icon": "layui-icon layui-icon-auz",
+		"type": 0,
+		"href": "",
+		"children": [
+			{
+				"id": "success",
+				"title": "成功页面",
+				"icon": "layui-icon layui-icon-face-smile",
+				"type": 1,
+				"openType": "_component",
+				"href": "view/result/success"
+			},
+			{
+				"id": "failure",
+				"title": "失败页面",
+				"icon": "layui-icon layui-icon-face-cry",
+				"type": 1,
+				"openType": "_component",
+				"href": "view/result/error"
+			}
+		]
+	},
+	{
+		"id": "exception",
+		"title": "异常页面",
+		"icon": "layui-icon layui-icon-auz",
+		"type": 0,
+		"href": "",
+		"children": [
+			{
+				"id": "403",
+				"title": "403",
+				"icon": "layui-icon layui-icon-face-smile",
+				"type": 1,
+				"openType": "_component",
+				"href": "view/exception/403"
+			},
+			{
+				"id": "404",
+				"title": "404",
+				"icon": "layui-icon layui-icon-face-cry",
+				"type": 1,
+				"openType": "_component",
+				"href": "view/exception/404"
+			},
+			{
+				"id": "500",
+				"title": "500",
+				"icon": "layui-icon layui-icon-face-cry",
+				"type": 1,
+				"openType": "_component",
+				"href": "view/exception/500"
+			}
+		]
+	}
+]

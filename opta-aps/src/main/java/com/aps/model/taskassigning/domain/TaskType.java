@@ -1,6 +1,6 @@
 package com.aps.model.taskassigning.domain;
 
-import com.aps.common.domain.AbstractPersistable;
+import com.aps.domain.AbstractPersistable;
 import lombok.Data;
 
 import java.util.ArrayList;

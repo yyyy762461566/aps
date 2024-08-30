@@ -1,6 +1,6 @@
 package com.aps.model.taskassigning.domain;
 
-import com.aps.common.domain.AbstractPersistable;
+import com.aps.domain.AbstractPersistable;
 import com.aps.model.taskassigning.domain.solver.StartTimeUpdatingVariableListener;
 import lombok.Data;
 import org.optaplanner.core.api.domain.entity.PlanningEntity;

@@ -1,6 +1,6 @@
 package com.aps;
 
-import com.aps.ap.application.material.ProductMaterialApplicationService;
+import com.aps.application.ProductMaterialApplicationService;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
